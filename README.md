@@ -4,11 +4,11 @@
 The Social Network Backend System is a console-based Java application that simulates the core backend of a social media platform. It demonstrates how real-world social networks manage users, friendships, messaging, and community detection using fundamental Data Structures and Algorithms.
 Every feature in this project is backed by a specific data structure chosen for a deliberate reason — not randomly, but because it is the most efficient tool for that job.
 
-## How to Run
+# How to Run
 Make sure you have Java JDK 8 or above installed.
-# Compile
+## Compile
 javac SocialNetworkSystem.java
-# Run
+## Run
 java SocialNetworkSystem
 
 ## Project Structure
@@ -31,28 +31,28 @@ SocialNetworkSystem.java
 - Stack
 - Queue
 
-## Features
-# 1. Add User
+# Features
+## 1. Add User
 Registers a new user with a unique ID, name, age, and email. Stored in a HashMap for O(1) retrieval and added as a node in the friendship graph.
-# 2. Delete User
+## 2. Delete User
 Removes the user's profile from the HashMap and deletes their node from the graph along with all friendship edges connected to them.
-# 3. Add Friend Connection
+## 3. Add Friend Connection
 Creates an undirected edge between two users in the adjacency list. Both users appear in each other's friend lists.
-# 4. Remove Friend Connection
+## 4. Remove Friend Connection
 Deletes the edge between two users. Validates that both users exist and are actually friends before removing.
-# 5. Display All Friends
+## 5. Display All Friends
 Retrieves and prints the complete friend list of a given user directly from the adjacency list.
-# 6. Mutual Friends — BFS
+## 6. Mutual Friends — BFS
 Finds friends that two users have in common. Loads the friend list of User A into a HashSet, then checks each friend of User B against it. HashSet lookup is O(1), making the overall operation O(dA + dB).
-# 7. Friend Suggestions — BFS Level-2
+## 7. Friend Suggestions — BFS Level-2
 Runs BFS from the given user up to depth 2. Any node found at exactly level 2 that is not already a direct friend is returned as a suggestion. This is exactly how platforms like LinkedIn and Facebook generate "People You May Know."
-# 8. Connected Groups — DFS
+## 8. Connected Groups — DFS
 Detects all isolated communities in the network. Iterates over every unvisited user and runs a recursive DFS from each, collecting all reachable users into one component. Each DFS call produces one community group.
-# 9. View Profile + Recently Viewed Stack
+## 9. View Profile + Recently Viewed Stack
 Displays a user's full profile and pushes their ID onto a Stack. Because the Stack is LIFO, calling "Recently Viewed" always shows the most recently browsed profile at the top — the same behavior as a browser's back-history.
-# 10. Send Message — Queue
+## 10. Send Message — Queue
 Adds a message object to a LinkedList-based Queue. Messages wait in FIFO order. The "Process Next Message" option dequeues and delivers the oldest message first, just like a real messaging pipeline.
-# 11. Most Connected User — Sorting
+## 11. Most Connected User — Sorting
 Extracts all (userId, friendCount) pairs from the adjacency list, sorts them in descending order using a lambda comparator, and displays the full ranked list. The user at the top is the most connected.
 
 
