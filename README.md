@@ -57,14 +57,22 @@ Extracts all (userId, friendCount) pairs from the adjacency list, sorts them in 
 
 
 ## Menu options
- 1.  Add User                  2.  Delete User
- 3.  Add Friend                4.  Remove Friend
- 5.  Display Friends           6.  Mutual Friends (BFS)
- 7.  Suggest Friends (BFS L2)  8.  Connected Groups (DFS)
- 9.  View Profile (Stack)      10. Recently Viewed
- 11. Send Message (Queue)      12. Process Next Message
- 13. Show Message Queue        14. Most Connected User
- 15. List All Users             0. Exit
+ 1.  Add User                  
+ 2.  Delete User
+ 3.  Add Friend                
+ 4.  Remove Friend
+ 5.  Display Friends           
+ 6.  Mutual Friends (BFS)
+ 7.  Suggest Friends (BFS L2)  
+ 8.  Connected Groups (DFS)
+ 9.  View Profile (Stack)      
+ 10. Recently Viewed
+ 11. Send Message (Queue)      
+ 12. Process Next Message
+ 13. Show Message Queue        
+ 14. Most Connected User
+ 15. List All Users             
+ 0. Exit
 
 ## Edge Cases Handled
 
